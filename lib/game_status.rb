@@ -36,9 +36,12 @@ end
 def full?(board)
 #board.all? {|index| index == "O" || index == "X"}
 #!board.any? { |x| x == " " }
-  board.all? do |index| 
-    index == "X" or index == "O"
-  end
+  board.each do |index|
+    if position_taken?(board, index)
+      true
+    else
+      false
+    end  
 end
 
 def draw?(board)
