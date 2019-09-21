@@ -37,10 +37,10 @@ def full?(board)
 #board.all? {|index| index == "O" || index == "X"}
 #!board.any? { |x| x == " " }
   board.each do |index| 
-    if index != " "
-      return true
-    else
+    if index == " "
       return false
+    else
+      return true
     end  
   end
 end
