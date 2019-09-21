@@ -38,9 +38,9 @@ def full?(board)
 #!board.any? { |x| x == " " }
   board.each do |index| 
     if index != " "
-      true
+      return true
     else
-      false
+      return false
     end  
   end
 end
