@@ -78,6 +78,6 @@ def winner(board)
   if draw?(board) || over?(board) 
     nil
   elsif board[won?(board)[0]] == "X"
-    return "X"
+     "X"
   end  
 end  
