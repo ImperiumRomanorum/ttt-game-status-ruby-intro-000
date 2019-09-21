@@ -40,7 +40,7 @@ def full?(board)
     if index == " "
       return false
     else
-      return true
+      true
     end  
   end
 end
