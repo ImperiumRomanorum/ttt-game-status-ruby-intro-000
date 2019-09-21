@@ -43,7 +43,7 @@ def full?(board)
       #true
     #end  
   #end
-  
+#alternative methods above  
   board.each do |index|
     if index == "O" || index == "X"
       true
