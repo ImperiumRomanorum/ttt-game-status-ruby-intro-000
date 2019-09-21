@@ -37,12 +37,12 @@ def full?(board)
 #board.all? {|index| index == "O" || index == "X"}
 #!board.any? { |x| x == " " }
 #board.each do |index| 
-    #if index == " "
-     #return false
-    #else
-      #true
-    #end  
-  #end
+#    if index == " "
+#      return false
+#    else
+#      true
+#    end  
+#  end
 #alternative methods above  
   board.each do |index|
     if index == "O" || index == "X"
@@ -72,7 +72,9 @@ def over?(board)
 end
 
 def winner(board)
-  if won?(board)
-      return board[won?(board)[0]]
-   end
+#  if won?(board)
+#    return board[won?(board)[0]]
+#  end
+
+
 end  
