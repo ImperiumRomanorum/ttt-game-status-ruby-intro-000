@@ -44,13 +44,13 @@ def full?(board)
     #end  
   #end
 #alternative methods above  
-  board.find do |index| 
-    if index == " "
-      return false
-    else
+  board.each do |index|
+    if index == "O" || index == "X"
       true
-    end
-  end
+    else
+      return false
+    end  
+  end  
 end
 
 def draw?(board)
