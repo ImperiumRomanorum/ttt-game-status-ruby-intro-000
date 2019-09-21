@@ -44,14 +44,7 @@ def full?(board)
     #end  
   #end
 #alternative methods above  
-  board.each do |index|
-    if index == "O" || index == "X"
-      true
-    else
-      return false
-    end  
-  end  
-end
+
 
 def draw?(board)
   if !won?(board) && full?(board)
