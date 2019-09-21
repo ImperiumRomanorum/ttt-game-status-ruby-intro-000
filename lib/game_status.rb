@@ -46,7 +46,7 @@ def full?(board)
 #alternative methods above  
   board.find do |index| 
     if index == " "
-      false
+      return false
     else
       true
     end
